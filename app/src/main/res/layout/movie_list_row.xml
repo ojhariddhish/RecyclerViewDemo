@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/year"
+        android:textColor="@color/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="1985" />
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/year"
+        android:layout_toStartOf="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Back To The Future" />
+
+    <TextView
+        android:id="@+id/tag_line"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/accent"
+        tools:text="He's the only kid ever to get into trouble before he was born." />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_below="@+id/tag_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        tools:text="Robert Zemeckis" />
+
+    <TextView
+        android:id="@+id/screenplay"
+        android:layout_below="@+id/director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_text"
+        tools:text="Robert Zemeckis, Bob Gale" />
+
+    <TextView
+        android:id="@+id/actor"
+        android:layout_below="@+id/screenplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_text"
+        tools:text="Michael J. Fox" />
+
+    <TextView
+        android:id="@+id/actress"
+        android:layout_below="@+id/actor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_text"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/story"
+        android:layout_below="@+id/actress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_text"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_below="@+id/story"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:textSize="12sp"
+        tools:text="Sci-Fi" />
+
+</RelativeLayout>
